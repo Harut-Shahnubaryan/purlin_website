@@ -1,7 +1,61 @@
 
 /* header */
+@media screen and (max-width:1366px){
+  .arrow-right-open-responsive{
+    display: flex!important;
+  }
+  .nav-ul>a:nth-last-child(2){
+    display: none;
+  }
+  .input-field{
+    width: 430px;
+  }
+}
 
+@media screen and (max-width:1280px){
+  .input-field{
+    width: 380px;
+  }
+  .nav-ul>a:nth-last-child(3){
+    display: none;
+  }
+}
 
+@media screen and (max-width:1192px){
+  .input-field{
+    width: 300px;
+  }
+  .nav-ul>a:nth-last-child(4){
+    display: none;
+  }
+  .custom-select__trigger{
+    width: 80px;
+  }
+  .custom-select-trigger{
+    width: 130px;
+  }
+  .custom-select__trigger>span{
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .input-field{
+    width: 260px;
+  }
+  .dot-container,.custom-select-trigger{
+    display: none;
+  }
+  .block-preferences{
+    display: block;
+  }
+}
+
+@media screen and (max-width:834px){
+  .input-field{
+    width: 180px;
+  }
+}
 
 /* items images */
   @media all and (max-width: 600px) {

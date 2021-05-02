@@ -7,29 +7,28 @@ a, p, h1, h2, h3, h4, h5, h6, option, li {
     font-family: "Poppins";
 }
 
-p>span{
+p>span {
     font: normal normal 600 15px/36px "Poppins";
 }
 
-li{
+li {
     font: normal normal normal 14px/32px "Poppins";
 }
 
-h1{
+h1 {
     font-family: "Poppins";
     font: normal normal 600 28px/36px "Poppins";
 }
 
-span{
+/* span{
     font: normal normal normal 12px/18px "Poppins";
-}
+} */
 
 a {
     text-decoration: none;
     padding: 4px;
     font-size: 11px;
 }
-
 
 .header {
     padding: 0 15px;
@@ -39,17 +38,17 @@ a {
     top: 0;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-direction: column;
 }
 
-.flex-container{
+.flex-container {
     display: flex;
     justify-content: space-evenly;
 }
 
-.flex-container-1{
+.flex-container-1 {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -58,41 +57,38 @@ a {
     padding-bottom: 24px;
 }
 
-.flex-container2{
+.flex-container2 {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.flex-column{
+.flex-column {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #FAFAFA;
-    box-shadow: 
-    inset 0px 1px 2px -1px #CCC,
-    inset 0px -1px 2px -1px #CCC; 
+    box-shadow: inset 0px 1px 2px -1px #CCC, inset 0px -1px 2px -1px #CCC;
 }
 
-.block{
+.block {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-.block2{
+.block2 {
     width: 100%;
 }
 
-.dot-container{
+.dot-container {
     padding-right: 10px;
     padding-left: 10px;
 }
 
-.dot-container>span{
+.dot-container>span {
     display: block;
     box-shadow: 0px 3px 9px #2828280D;
     padding-top: 10px;
@@ -105,9 +101,30 @@ a {
     transition: 0.2s;
 }
 
-
-.dot-container>span:hover{
+.dot-container>span:hover {
     color: #FF9244;
+}
+
+.block-preferences{
+    display: none;
+}
+
+.preferences-block-responsive {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 9px #2828280d;
+    border-radius: 4px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: 0.2s;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.preferences-block-responsive>span{
+    font: normal normal normal 12px/18px Poppins;
+    padding-right: 15px;
 }
 
 .checkbox-burger-btn {
@@ -127,7 +144,8 @@ a {
     cursor: pointer;
 }
 
-.logo-burger-btn-container, .search-select-container, .user-login-block, .collection-container{
+.logo-burger-btn-container, .search-select-container,
+.user-login-block, .collection-container, .preferences-block-responsive {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,13 +158,13 @@ a {
     padding-right: 15px;
 }
 
-#burger-button:checked~.open-menu{
+#burger-button:checked~.open-menu {
     opacity: 1;
     visibility: visible;
     transform: translateX(0%);
 }
 
-.close{
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -154,11 +172,12 @@ a {
     cursor: pointer;
     transition: 0.2s;
 }
-.close:hover{
-    color:#666666
+
+.close:hover {
+    color: #666666
 }
 
-.open-menu{
+.open-menu {
     width: 220px;
     position: absolute;
     top: 0;
@@ -176,7 +195,7 @@ a {
     padding: 30px;
 }
 
-.menu-content-header{
+.menu-content-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,7 +203,7 @@ a {
     padding-bottom: 10px;
 }
 
-.menu-navBar>li{
+.menu-navBar>li {
     padding-top: 20px;
     padding-bottom: 20px;
     letter-spacing: 0.23px;
@@ -193,7 +212,7 @@ a {
     cursor: pointer;
 }
 
-.menu-navBar>li>ul>li{
+.menu-navBar>li>ul>li {
     color: #666666;
     font: normal normal normal 14px/32px Poppins;
     cursor: pointer;
@@ -205,20 +224,20 @@ a {
     display: inline-block;
     padding: 3px;
     transform: rotate(45deg);
-  }
+}
 
-.menu-navBar>li>ul>li:hover{
+.menu-navBar>li>ul>li:hover {
     text-decoration: underline;
     color: #282828;
 }
 
-.menu-navBar>li>p>i{
+.menu-navBar>li>p>i {
     float: right;
     margin-top: 10px;
-    margin-right:4px;
+    margin-right: 4px;
 }
 
-.menu-content-header>h1{
+.menu-content-header>h1 {
     font: normal normal 600 20px/20px Poppins;
 }
 
@@ -234,6 +253,10 @@ a {
     width: 100%;
 }
 
+.input-icons:hover i {
+    color: #FF9244;
+}
+
 .search-icon {
     padding: 10px;
 }
@@ -246,12 +269,12 @@ a {
     border: 0px solid #d1d0d0;
     border-radius: 2px;
     box-shadow: 0px 0px 1px 1px #d1d0d0;
+    width: 480px;
 }
 
 input:focus {
     outline: none;
 }
-
 
 /* select-option by divs*/
 
@@ -287,22 +310,21 @@ input:focus {
 .custom-select__trigger>span {
     padding-right: 15px;
     padding-left: 15px;
-
+    font: normal normal normal 12px/18px "Poppins";
 }
 
-.custom-select-trigger{
+.custom-select-trigger {
     width: auto;
     margin-right: 15px;
     white-space: nowrap;
     transition: 0.2s;
 }
 
-.custom-select-trigger>span{
+.custom-select-trigger>span {
     font: normal normal 600 13px/20px Poppins;
-
 }
 
-.custom-select-trigger:hover > .custom-select-trigger-icon{
+.custom-select-trigger:hover>.custom-select-trigger-icon {
     color: #FF9244;
 }
 
@@ -320,12 +342,12 @@ input:focus {
     box-shadow: 0px 3px 9px #2828280D;
 }
 
-span.custom-options{
+span.custom-options {
     font: normal normal normal 12px/18px "Poppins";
 }
 
-.custom-options-with-icon>.disabled-select-option{
-    text-transform:none;
+.custom-options-with-icon>.disabled-select-option {
+    text-transform: none;
 }
 
 .custom-select:hover .custom-options {
@@ -339,7 +361,8 @@ span.custom-options{
     position: relative;
     display: block;
     padding: 4px;
-    padding: 0 0 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 10px;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -348,6 +371,7 @@ span.custom-options{
     color: #282828;
     cursor: pointer;
     transition: 0.3s;
+    font: normal normal normal 12px/18px "Poppins";
 }
 
 .custom-option:hover {
@@ -414,7 +438,7 @@ span.custom-options{
 
 .collection-container {
     cursor: pointer;
-    margin-left:20px ;
+    margin-left: 20px;
 }
 
 .collection-container:hover>a {
@@ -440,12 +464,12 @@ span.custom-options{
     text-align: center;
 }
 
-
 .user-logIn {
     display: block;
     padding-left: 15px;
     padding-right: 15px;
     white-space: nowrap;
+    font: normal normal normal 12px/18px "Poppins";
 }
 
 .user-login-block {
@@ -481,7 +505,7 @@ span.custom-options{
     border-color: #282828
 }
 
-.flex-navbar-container{
+.flex-navbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -500,6 +524,7 @@ span.custom-options{
     padding-left: 10px;
     padding-right: 10px;
     white-space: nowrap;
+    justify-content: center;
 }
 
 .nav-ul a {
@@ -508,339 +533,45 @@ span.custom-options{
     border-radius: 4px;
     padding-top: 11px;
     padding-bottom: 11px;
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 16px;
+    padding-right: 16px;
     transition: 0.2s;
     margin-right: 10px;
     white-space: nowrap;
 }
 
-.nav-ul a:hover{
+.arrow-right-open-responsive {
+    padding-left: 0!important;
+    padding-right: 0!important;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    align-items: center;
+    background: white 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    color: #666666;
+    border: 2px solid #D9D9D9;
+    box-sizing: border-box;
+    display: none!important;
+}
+
+.arrow-right-open-responsive:hover {
+    color: #282828;
+    border: 2px solid #282828;
+}
+
+.nav-ul a:hover {
     color: #FF9244;
 }
 
-
-.custom-select-trigger-icon{
-    padding-left: 0;    
+.custom-select-trigger-icon {
+    padding-left: 0;
     padding-right: 8px;
     padding-top: 6px;
     padding-bottom: 6px;
     border-right: 1px solid #2828280D;
     box-sizing: border-box;
 }
-
-/* 
-
-.header-logo-bar-container {
-    display: flex;
-    align-items: center;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.logo-burger-btn {
-    display: flex;
-    align-items: center;
-}
-
-.checkbox-burger-btn {
-    display: none;
-}
-
-.burger-button {
-    margin-top: 10px;
-}
-
-.burger-button span {
-    display: block;
-    width: 15px;
-    height: 2px;
-    background-color: #A0A0A0;
-    margin: 2px;
-    cursor: pointer;
-}
-
-.logo-burger-btn>h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.input-icon-container {
-    padding-left: 20px;
-}
-
-.input-icons i {
-    position: absolute;
-}
-
-.input-icons {
-    width: 100%;
-}
-
-.input-icons>input {
-    border: 0px solid #d1d0d0;
-    border-radius: 2px;
-    box-shadow: 0px 0px 1px 1px #d1d0d0;
-}
-
-.search-icon {
-    padding: 10px;
-    min-width: 40px;
-}
-
-.input-field {
-    width: 600px;
-    padding: 10px;
-    padding-left: 30px;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-input:focus {
-    outline: none;
-}
-
-.custom-select-wrapper {
-    position: relative;
-    user-select: none;
-    border: 0px solid #d1d0d0;
-    border-radius: 2px;
-    box-shadow: 0px 0px 1px 1px #d1d0d0;
-}
-
-.custom-select {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    font-size: 13px;
-}
-
-.custom-select__trigger {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 15px;
-    height: 25px;
-    font-weight: 300;
-    cursor: pointer;
-    color: #282828;
-    width: 130px;
-    background: #fff;
-}
-
-.custom-select__trigger>span {
-    font-size: 15px;
-}
-
-.custom-options {
-    position: absolute;
-    display: block;
-    top: 100%;
-    left: 0;
-    right: 0;
-    border-top: 0;
-    transition: 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 2;
-    box-shadow: 0px 3px 9px #2828280D;
-}
-
-.custom-select:hover .custom-options {
-    opacity: 1;
-    visibility: visible;
-    background: #fff
-}
-
-.custom-option {
-    position: relative;
-    display: block;
-    padding: 4px;
-    padding: 0 0 0 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-weight: 300;
-    line-height: 30px;
-    color: #282828;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.custom-option:hover {
-    cursor: pointer;
-    transform: translateX(5px);
-    background-color: #FAFAFA;
-    border-radius: 4px;
-}
-
-.disabled-select-option {
-    color: #62626280;
-    font-size: 11px;
-    text-transform: uppercase;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.disabled-select-option:hover {
-    transform: translateX(0px);
-    background-color: transparent;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.arrow {
-    position: relative;
-    height: 8px;
-    width: 8px;
-}
-
-.arrow::before, .arrow::after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    width: 0.12rem;
-    height: 100%;
-    transition: all 0.3s;
-}
-
-.arrow::before {
-    transform: rotate(-45deg);
-    background-color: #666666;
-}
-
-.arrow::after {
-    left: 5px;
-    transform: rotate(45deg);
-    background-color: #666666;
-}
-
-.custom-select:hover>.custom-select__trigger>.arrow:before {
-    left: 0px;
-    transform: rotate(45deg);
-    background-color: #FF9244;
-}
-
-.custom-select:hover>.custom-select__trigger>.arrow:after {
-    left: 5px;
-    transform: rotate(-45deg);
-    background-color: #FF9244;
-}
-
-.collection-container {
-    cursor: pointer;
-    padding-left: 40px;
-}
-
-.collection-container:hover>a {
-    text-decoration: underline!important;
-}
-
-.collection-container>a {
-    padding-left: 10px;
-}
-
-.collection {
-    width: 20px;
-    height: 20px;
-    background-color: #FF9244;
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    display: inline-block;
-    color: white;
-    line-height: 20px;
-    text-align: center;
-    font-size: 13px;
-}
-
-.autentication {
-    display: none;
-}
-
-.user-logIn {
-    display: block;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.user-login-block {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color: #A0A0A0;
-}
-
-.user-icon-container {
-    display: block;
-    position: relative;
-    border: 1px solid #A0A0A0;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.user-icon-container>i {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 19px;
-    color: #A0A0A0;
-}
-
-.user-login-block:hover, .user-login-block:hover .user-icon-container>i {
-    color: #282828;
-    cursor: pointer;
-}
-
-.user-login-block:hover .user-icon-container {
-    border-color: #282828
-}
-
-nav ul {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: space-around;
-    background: #FAFAFA;
-    box-shadow: 
-    inset 0px 1px 2px -1px #CCC,
-    inset 0px -1px 2px -1px #CCC; 
-}
-
-nav ul span {
-    display: flex;
-    align-items: center;
-}
-
-nav ul li {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 9px #2828280D;
-    border-radius: 4px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 26px;
-    padding-right: 26px;
-}
-
-nav ul li a {
-    font-size: 15px;
-}
-
-.show-first {
-    font-size: 13px;
-} */
 
 /* main */
 
@@ -869,7 +600,6 @@ nav ul li a {
     border-radius: 8px;
     height: 300px;
 }
-
 
 .title {
     padding: 10px;
@@ -905,12 +635,12 @@ figcaption {
     opacity: 1;
 }
 
-.item-discription-hover>div:nth-child(1){
+.item-discription-hover>div:nth-child(1) {
     transform: translateY(100%);
     transition: 0.2s;
 }
 
-.item-discription:hover .item-discription-hover>div:nth-child(1){
+.item-discription:hover .item-discription-hover>div:nth-child(1) {
     transform: translateY(0%);
 }
 
@@ -1010,7 +740,6 @@ figcaption {
     box-sizing: border-box;
 }
 
-
 .message-icon-container>span {
     width: 3px;
     height: 3px;
@@ -1022,8 +751,3 @@ figcaption {
 .message-container:hover .message-icon-container {
     transform: scale(1.2) translate(-40%, -40%);
 }
-
-
-
-
-
