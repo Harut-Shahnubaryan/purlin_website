@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Purlin</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="col.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="flex">
+            <div class="flex-container">
+                <div class="flex-container-1">
+                    <div class="logo-burger-btn-container">
+                        <input type="checkbox" class="checkbox-burger-btn" id="burger-button">
+                        <label for="burger-button" class="burger-button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <h1>purlin</h1>
+
+                        <div class="open-menu">
+                            <div class="menu-content-header">
+                                <h1>Menu</h1>
+                                    <label for="burger-button" class="close">
+                                       &times;
+                                   </label>
+                            </div>
+                                <ul class="menu-navBar">
+                                    <li>
+                                        <p><span>Explore Purlin</span> <i class="arrow-down down"></i></p>
+                                        <ul>
+                                            <li>About Us</li>
+                                            <li>Buyers & Renters</li>
+                                            <li>Blog</li>
+                                            <li>News</li>
+                                            <li>What if... video</li>
+                                            <li class="more-less">More</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p><span>For Professionals</span> <i class="arrow-down down"></i></p>
+                                    </li>
+                                    <li>
+                                        <p><span>Style Searches</span> <i class="arrow-down down"></i></p>
+                                    </li>
+                                    <li>
+                                        <p><span>Local Searches</span> <i class="arrow-down down"></i></p>
+                                    </li>
+                                </ul>
+                          </div>
+
+                    </div>
+                    <div class="search-select-container">
+                        <div class="input-icons">
+                            <div>
+                                    <i class="fa fa-search search-icon"></i>
+                                    <input class="input-field" type="text" placeholder="Search">
+                            </div>
+                        </div>
+                        <div class="custom-select-wrapper">
+                            <div class="custom-select">
+                                <div class="custom-select__trigger"><span>For sale</span>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="custom-options">
+                                    <span class="custom-option disabled-select-option">select type search</span>
+                                    <span class="custom-option">For sale</span>
+                                    <span class="custom-option">For rent</span>
+                                    <span class="custom-option">All</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="collection-container-wrap">
+                            <div class="collection-container">
+                                <span class="collection">8</span>
+                                <a href="">My Collection</a>
+                            </div>
+                       </div>
+                </div>
+
+                <div class="flex-container2">
+                    <div class="user-login-block">
+                        <span class="user-logIn">Log In</span>
+                        <span class="user-icon-container">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-column">
+                <div class="nav-ul">
+                    <span class="show-first">Show First:</span>
+                    <a href="">Facades</a>
+                    <a href="">Kitchens</a>
+                    <a href="">Living rooms</a>
+                    <a href="">Dining rooms</a>
+                    <a href="">Bedrooms</a>
+                    <a href="">Bathrooms</a>
+                    <a href="">Pools</a>
+                    <a href="">Backyards</a>
+                </div>
+                <div class="block">
+                    <div class="block2">
+                            <div class="custom-select">
+                                <div class="custom-select__trigger custom-select-trigger">
+                                    <i class="fa fa-home custom-select-trigger-icon" aria-hidden="true"></i>
+                                    <span>Traditional</span>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="custom-options custom-options-with-icon">
+                                    <span class="custom-option disabled-select-option">Select Style</span>
+                                    <span class="custom-option selected">Condominium</span>
+                                    <span class="custom-option">Mediterranean</span>
+                                    <span class="custom-option">Modern</span>
+                                    <span class="custom-option">Traditional</span>
+                                    <span class="custom-option">Other</span>
+                                    <span class="custom-option">All</span>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="block2">
+                        <div class="custom-select"> 
+                            <div class="custom-select__trigger custom-select-trigger">
+                                <i class="fa fa-usd custom-select-trigger-icon" aria-hidden="true"></i>
+                                <span>Top of Range</span>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="custom-options custom-options-with-icon">
+                                <span class="custom-option disabled-select-option">Select Style</span>
+                                <span class="custom-option selected">For sale</span>
+                                <span class="custom-option">For rent</span>
+                                <span class="custom-option">All</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                        <div class="dot-container">
+                            <span><i class="fa fa-ellipsis-h" aria-hidden="true"></i></span>
+                        </div>
+                </div>
+                        <!-- <ul class="nav-ul">
+                            <span class="show-first">Show First:</span>
+                            <li><a href="">Facades</a></li>
+                            <li><a href="">Kitchens</a></li>
+                            <li><a href="">Living rooms</a></li>
+                            <li><a href="">Dining rooms</a></li>
+                            <li><a href="">Bedrooms</a></li>
+                            <li><a href="">Bathrooms</a></li>
+                            <li><a href="">Pools</a></li>
+                            <li><a href="">Backyards</a></li>
+                        </ul> -->
+         
+        </div>
+    </header>
+
+    <!-- <header class="header">
+        <div class="header-container">
+            <div class="header-logo-bar-container">
+                <div class="logo-burger-btn">
+                    <input type="checkbox" class="checkbox-burger-btn" id="burger-button">
+                    <label for="burger-button" class="burger-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <h1>purlin</h1>
+                </div>
+
+                <div class="input-icon-container">
+                    <div class="input-icons">
+                        <i class="fa fa-search search-icon"></i>
+                        <input class="input-field" type="text" placeholder="Search">
+                    </div>
+                </div>
+
+                <div class="custom-select-wrapper">
+                    <div class="custom-select">
+                        <div class="custom-select__trigger"><span>For sale</span>
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option disabled-select-option">select type search</span>
+                            <span class="custom-option selected">For sale</span>
+                            <span class="custom-option">For rent</span>
+                            <span class="custom-option">All</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-container-wrap">
+                    <div class="collection-container">
+                        <span class="collection">8</span>
+                        <a href="">My Collection</a>
+                    </div>
+                </div>
+                <div class="user-login-block">
+                    <span class="user-logIn">Log In</span>
+                    <span class="user-icon-container">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="header-nav-bar-container">
+                <nav>
+                    <ul>
+                        <span class="show-first">Show First:</span>
+                        <li><a href="">Facades</a></li>
+                        <li><a href="">Kitchens</a></li>
+                        <li><a href="">Living rooms</a></li>
+                        <li><a href="">Dining rooms</a></li>
+                        <li><a href="">Bedrooms</a></li>
+                        <li><a href="">Bathrooms</a></li>
+                        <li><a href="">Pools</a></li>
+                        <li><a href="">Backyards</a></li>
+
+                        <div class="custom-select-wrapper">
+                            <div class="custom-select">
+                                <div class="custom-select__trigger"><span>For sale</span>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="custom-options">
+                                    <span class="custom-option disabled-select-option">select type search</span>
+                                    <span class="custom-option selected">For sale</span>
+                                    <span class="custom-option">For rent</span>
+                                    <span class="custom-option">All</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> -->
+
+    <main>
+        <div class="main-container">
+            <div class="title">
+                <h1>Luxory Kitchen interiors in California</h1>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <figure class="item-discription">
+                        <img
+                            src="https://media.gettyimages.com/photos/bohemian-living-room-interior-3d-render-picture-id1182454657?s=612x612" />
+                        <figcaption>
+                            <div class="item-discription-hover">
+                                <div>
+                                    <h1>Modern 5 bedroom home</h1>
+                                    <h3>Beverly Hills, CA</h3>
+                                </div>
+                                <div class="add-icon-container">
+                                    <div>
+                                        <span>
+                                            <i class="fa fa-plus fa-plus-mySyle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="item-discription">
+                        <img
+                            src="https://n1s1.elle.ru/9d/d1/03/9dd10331eb4d3a78dba4d59212e672b2/620x786_1_87fd586524ff96f8bb54c2b6eac65b31@940x1192_0xac120003_3503211361572337174.jpg" />
+                        <figcaption>
+                            <div class="item-discription-hover">
+                                <div>
+                                    <h1>Modern 5 bedroom home</h1>
+                                    <h3>Beverly Hills, CA</h3>
+                                </div>
+                                <div class="add-icon-container">
+                                    <div>
+                                        <span>
+                                            <i class="fa fa-plus fa-plus-mySyle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="item-discription">
+                        <img
+                            src="https://media.gettyimages.com/photos/bohemian-living-room-interior-3d-render-picture-id1182454657?s=612x612" />
+                        <figcaption>
+                            <div class="item-discription-hover">
+                                <div>
+                                    <h1>Modern 5 bedroom home</h1>
+                                    <h3>Beverly Hills, CA</h3>
+                                </div>
+                                <div class="add-icon-container">
+                                    <div>
+                                        <span>
+                                            <i class="fa fa-plus fa-plus-mySyle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="item-discription">
+                        <img
+                            src="https://media.gettyimages.com/photos/bohemian-living-room-interior-3d-render-picture-id1182454657?s=612x612" />
+                        <figcaption>
+                            <div class="item-discription-hover">
+                                <div>
+                                    <h1>Modern 5 bedroom home</h1>
+                                    <h3>Beverly Hills, CA</h3>
+                                </div>
+                                <div class="add-icon-container">
+                                    <div>
+                                        <span>
+                                            <i class="fa fa-plus fa-plus-mySyle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="item-discription">
+                        <img
+                            src="https://media.gettyimages.com/photos/bohemian-living-room-interior-3d-render-picture-id1182454657?s=612x612" />
+                        <figcaption>
+                            <div class="item-discription-hover">
+                                <div>
+                                    <h1>Modern 5 bedroom home</h1>
+                                    <h3>Beverly Hills, CA</h3>
+                                </div>
+                                <div class="add-icon-container">
+                                    <div>
+                                        <span>
+                                            <i class="fa fa-plus fa-plus-mySyle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="item-discription">
+                        <img
+                            src="https://media.gettyimages.com/photos/bohemian-living-room-interior-3d-render-picture-id1182454657?s=612x612" />
+                        <figcaption>
+                            <div class="item-discription-hover">
+                                <div>
+                                    <h1>Modern 5 bedroom home</h1>
+                                    <h3>Beverly Hills, CA</h3>
+                                </div>
+                                <div class="add-icon-container">
+                                    <div>
+                                        <span>
+                                            <i class="fa fa-plus fa-plus-mySyle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="item-discription">
+                        <img
+                            src="https://media.gettyimages.com/photos/bohemian-living-room-interior-3d-render-picture-id1182454657?s=612x612" />
+                        <figcaption>
+                            <div class="item-discription-hover">
+                                <div>
+                                    <h1>Modern 5 bedroom home</h1>
+                                    <h3>Beverly Hills, CA</h3>
+                                </div>
+                                <div class="add-icon-container">
+                                    <div>
+                                        <span>
+                                            <i class="fa fa-plus fa-plus-mySyle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="item-discription">
+                        <img
+                            src="https://media.gettyimages.com/photos/bohemian-living-room-interior-3d-render-picture-id1182454657?s=612x612" />
+                        <figcaption>
+                            <div class="item-discription-hover">
+                                <div>
+                                    <h1>Modern 5 bedroom home</h1>
+                                    <h3>Beverly Hills, CA</h3>
+                                </div>
+                                <div class="add-icon-container">
+                                    <div>
+                                        <span>
+                                            <i class="fa fa-plus fa-plus-mySyle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="message-container">
+            <div class="message-icon-container">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
